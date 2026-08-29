@@ -27,6 +27,7 @@ def order_create(request):
     try:
         data = receive_json_webhook(request)
     except Exception:
+        logger.exception('Unexpected error receiving Shopify webhook')
         return HttpResponse(status=400)
 
     try:

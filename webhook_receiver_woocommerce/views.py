@@ -63,6 +63,7 @@ def order_create_or_update(request):
     try:
         data = receive_json_webhook(request)
     except Exception:
+        logger.exception('Unexpected error receiving WooCommerce webhook')
         return HttpResponse(status=400)
 
     try:
