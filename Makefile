@@ -37,7 +37,7 @@ requirements:
 	pip3 install -r requirements/local.txt --exists-action w
 
 requirements.tox:
-	pip3 install -U pip==20.0.2
+	pip3 install -U pip==26.2.2
 	pip3 install -r requirements/test.txt --exists-action w
 
 production-requirements:

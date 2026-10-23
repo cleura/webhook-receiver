@@ -6,7 +6,7 @@ py38:
   image: python:3.8
   stage: build
   variables:
-    TOX_PIP_VERSION: '20.2.4'
+    TOX_PIP_VERSION: '26.2.2'
   before_script:
     - pip install tox tox-pip-version
   script:
